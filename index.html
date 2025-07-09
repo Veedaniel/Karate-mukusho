@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MKK - Mukusho Karate Kenya</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🔼 TOP BANNER STYLES */
+    .top-banner {
+      background: linear-gradient(to right, #9b0023, #1c0a0a);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      font-size: 1.1em;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .countdown {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+    }
+
+    .countdown span {
+      font-size: 1.2em;
+    }
+
+    .location {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons i {
+      width: 30px;
+      height: 30px;
+      background: #999;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+      color: #000;
+      cursor: pointer;
+    }
+
+    /* 🔽 MAIN HEADER NAVIGATION */
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .main-header .logo img {
+      height: 80px;
+      margin-left: 60px;
+      padding-right: 10px;
+    }
+
+    .main-header nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      gap: 25px;
+    }
+
+    .main-header nav ul li {
+      font-weight: bold;
+      color: #a00032;
+      cursor: pointer;
+      margin-right: 25px;
+    }
+
+    .icons {
+      font-size: 1.3em;
+      display: flex;
+      gap: 20px;
+      color: #a00032;
+    }
+
+    .secondary-nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      padding: 10px 0;
+    }
+
+    .secondary-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .secondary-nav li {
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .hero {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      display: block;
+      position: relative;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #a00032;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      position: sticky;
+      bottom: 0;
+      z-index: 100;
+      box-shadow: border-box;
+      width: 100%;
+    }
+
+    .bottom-nav div.active {
+      border-bottom: 1px solid white;
+      display: inline;
+      padding-bottom: 5px;
+      position: relative;
+    }
+
+    /* Icon placeholders - optional if using real icons */
+    .icon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔼 ADDED TOP BANNER -->
+  <div class="top-banner">
+    <div class="countdown">
+      <span id="days">16</span> Days :
+      <span id="hours">00</span> Hours :
+      <span id="minutes">42</span> Minutes
+    </div>
+    <div class="location">KIDS,TEENS, KARATINA-Tumutumu Girls</div>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+  </div>
+
+  <!-- 🔽 EXISTING HEADER NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="MOK log.jpg" alt="KKF Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li>Events ▾</li>
+        <li>Ranking</li>
+        <li>News Center</li>
+      </ul>
+    </nav>
+    <div class="icons">
+      📈 🔍 🗓 ☰
+    </div>
+  </header>
+
+  <div class="secondary-nav">
+    <ul>
+      <li>KARATE 1</li>
+      <li>KKF CHAMPIONSHIPS</li>
+      <li>MUKUSHO CHAMPIONSHIPS</li>
+      <li>MULTISPORT EVENTS</li>
+      <li>OTHER EVENTS</li>
+    </ul>
+  </div>
+
+  <div class="hero">
+    <img src="Moksh.jpg" alt="Event Arena" />
+  </div>
+
+  <div class="bottom-nav">
+    <div class="active">Live and Upcoming</div>
+    <div>Mukusho Championships</div>
+    <div>Karate 1</div>
+    <div>School Championships</div>
+    <div>Multisport Events</div>
+    <div>Other Events</div>
+  </div>
+
+  <!-- 🔼 ADDED COUNTDOWN SCRIPT -->
+  <script>
+    const targetDate = new Date("July 12, 2025 00:00:00").getTime();
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("days").innerText = d;
+      document.getElementById("hours").innerText = h;
+      document.getElementById("minutes").innerText = m;
+    }, 1000);
+  </script>
+</body>
+</html>
